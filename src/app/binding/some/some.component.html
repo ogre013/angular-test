@@ -1,0 +1,24 @@
+<!--<input type="text" [(ngModel)]="username">
+<p>{{username}}</p>
+<button class="btn btn-primary" [disabled]="!(this.username && this.username.length > 0)" (click)="clearInput()">Clear input</button>
+<input type="text" [value]="testMethod()">-->
+<!--<button class="btn btn-primary" (click)="changeStatus()">Click</button>
+<p *ngIf="someStatus; else someMark">Some status is true</p>
+<ng-template #someMark>
+  <p>Some status is false</p>
+</ng-template>-->
+<!--
+<button class="btn btn-primary" (click)="add()">Add</button>
+<button class="btn btn-primary" (click)="remove()">Remove</button>
+<div
+  [ngStyle]="{backgroundColor: indicatorColor()}"
+  [ngClass]="{whiteText: indicatorText()}">Indicator</div>
+<div *ngFor="let text of texts">
+  <div>{{text}}</div>
+</div>
+-->
+<button class="btn btn-primary" (click)="updateStatusP()">DisplayDetails</button>
+<p>Some text</p>
+<div *ngFor="let el of timeStamps; index as i;">
+  <p [ngStyle]="{backgroundColor: setBackgroundColor(i)}" [ngClass]="{whiteText: checkCountTimeStamps(i)}">{{el}}</p>
+</div>
